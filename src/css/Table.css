@@ -1,0 +1,233 @@
+/* AddNew */
+
+.addNew {
+  margin-bottom: 10px;
+}
+
+/* Forms shared between AddNew and Participant editing view */
+
+.form {
+  max-width: 912px;
+  min-width: 600px;
+  height: 72px;
+  margin: auto;
+  margin-top: 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formInputs {
+  flex-grow: 1;
+  background-color: white;
+  display: flex;
+  padding: 16px;
+}
+
+.formInputs .email {
+  margin: 0 16px;
+}
+
+input {
+  padding: 3px 13px;
+  line-height: 24px;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  background-color: #FAFAFA;
+}
+
+.errors {
+  flex-grow: 1;
+  margin-top: 10px;
+  position: relative;
+  bottom: 27px;
+  display: flex;
+  color: red;
+  padding: 0 16px;
+}
+
+.errors div {
+  border-radius: 10px;
+  padding: 1px;
+  margin: 0 13px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.errors .email {
+  margin: 0 29px;
+}
+
+.addButton {
+  height: 40px;
+  width: 100px;
+  background-color: #07f;
+  color: #ffffff;
+  text-align: center;
+  align-self: flex-end;
+  margin-left: auto;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.addButton:hover {
+  cursor: pointer;
+}
+
+/* Table labels */
+
+i {
+  vertical-align: middle;
+}
+
+.tableLabels {
+  display: flex;
+  background-color: white;
+}
+
+.tableLabels > div {
+  padding: 16px 24px 16px 24px;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.tableLabels > div:hover {
+  cursor: pointer;
+}
+
+#disabled {
+  background-color: #f1f1f1;
+  color: #909090;
+}
+
+#disabled:hover {
+  cursor: default;
+}
+
+/* Shared between all display and input fields */
+
+.name {
+  width: 16%;
+}
+
+.email {
+  width: 33%;
+}
+
+.phone {
+  width: 18%;
+}
+
+/* Participant */
+
+.row {
+  max-width: 912px;
+  min-width: 600px;
+  color: #505050;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: white;
+  margin-top: 1px;
+  display: flex;
+}
+
+div.row > div {
+  padding: 24px;
+}
+
+#iconButton {
+  display: flex;
+  width: 13%;
+  margin-left: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin-right: 10px;
+}
+
+#iconButton div {
+  padding: 10px;
+}
+
+#iconButton div:hover {
+  cursor: pointer;
+}
+
+/* Buttons when editing a Participant */
+
+.buttons {
+  display: flex;
+  align-self: flex-end;
+  margin-left: auto;
+  line-height: 40px;
+}
+
+.buttons div {
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  align-self: flex-end;
+}
+
+.buttons div:hover {
+  cursor: pointer;
+}
+
+.save {
+  background-color: #07f;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.cancel {
+  background-color: #F1F1F1;
+  color: #07f;
+}
+
+.row i {
+  color: #909090;
+}
+
+/* Less padding for smaller screens */
+
+@media only screen and (max-width : 768px) {
+  .errors {
+    padding: 0 8px;
+  }
+
+  .errors .email {
+    margin: 0 23px;
+    width: 33%;
+  }
+
+  div.row > div {
+    padding: 24px 12px;
+  }
+
+  div.email {
+    width: 35%;
+    margin-right: 20px;
+  }
+
+  .tableLabels > div {
+    padding: 16px 12px;
+  }
+  
+  .addButton {
+    width: 85px;
+  }
+
+  .formInputs {
+    padding: 16px 8px;
+  }
+  
+  .formInputs .email {
+    margin: 0 10px;
+  }
+  
+  .buttons div {
+    width: 65px;
+  }
+}

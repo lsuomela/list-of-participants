@@ -1,0 +1,54 @@
+.App {
+  margin: auto;
+  max-width: 976px;
+  min-width: 600px;
+  background-color: #F1F1F1;
+}
+
+.App-header {
+  background-color: #ADB5BD;
+  line-height: 16px;
+  color: white;
+  padding: 32px;
+  max-width: 912px;
+  font-size: 1.6em;
+}
+
+h2 {
+  margin-bottom: 32px;
+  color: #757575;
+}
+
+.App-title {
+  height: 32px;
+}
+
+span {
+  font-weight: 500;
+  padding-left: 10px;
+  vertical-align: 40%;
+  margin: 0;
+}
+
+.table {
+  padding: 50px 32px;
+  max-width: 912px;
+  min-width: 600px;
+  margin: auto;
+}
+
+/* For screens smaller than 946px */
+@media only screen and (max-width : 946px) {
+
+  .App-header {
+    padding-left: 5px;
+  }
+
+  .table {
+    padding: 0;
+  }
+
+  h2 {
+    padding-left: 5px;
+  }
+}
